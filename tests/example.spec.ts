@@ -19,8 +19,8 @@ test('Abuse MU', async ({ page }) => {
     // Click the get started link.
     await page.getByText("Account Login").first().click();
 
-    await page.getByPlaceholder("Username").fill("tiger");
-    await page.getByPlaceholder("Password").fill("123456");
+    await page.getByPlaceholder("Username").fill("");
+    await page.getByPlaceholder("Password").fill("");
     await page.getByRole('button', { name: 'Login' }).first().click();
   }
   async function buy() {
